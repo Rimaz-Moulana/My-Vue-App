@@ -1,5 +1,5 @@
 <template>
-    <section class="p-8 bg-bgRose rounded-se-[20%]">
+    <section class="p-10 bg-bgRose rounded-se-[20%]">
       <h2 class="text-3xl font-bold text-center mb-8 mt-20">Master Your Career Growth with Our Top-Rated, Expert-Led Courses</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div v-for="course in courses" :key="course.id" class="bg-white p-4 rounded-lg shadow-lg flex flex-col">

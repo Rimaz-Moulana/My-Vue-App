@@ -1,5 +1,5 @@
 <template>
-    <section class="p-8 text-center">
+    <section class="p-10 text-center">
       <h2 class="text-3xl font-bold mb-8">Find Your Perfect Fit: Dive Into Our Diverse Categories</h2>
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div class="bg-white p-4 rounded-lg shadow-lg">

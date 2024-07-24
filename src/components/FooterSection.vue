@@ -1,7 +1,7 @@
 <template>
-    <section class="relative bg-bgRose p-8 text-center overflow-hidden">
-        <div class="grid md:grid-cols-5 gap-20 lg:grid-cols-5 sm:grid-cols-1">
-            <div class="p-2 mt-8">
+    <section class="relative bg-bgRose p-10 text-center overflow-hidden">
+        <div class="grid md:grid-cols-5 lg:grid-cols-5 sm:grid-cols-1">
+            <div class="p-10 mt-8">
                 <div class="flex items-center justify-center">
                     <img :src="Logo" alt="Logo" class="h-10 mr-4">
                     <div class="flex items-baseline">
@@ -9,10 +9,10 @@
                         <span class="text-gray-600 text-3xl font-mono ml-1">Edulink</span>
                     </div>
                 </div>
-                <div class="mt-12 text-left">
-                    <p>Global Edulink offers accessible, high-quality online<br> education for all, with flexible programs tailored to<br> fit into daily life, empowering learners worldwide to<br> achieve personal and professional goals.</p>
+                <div class="mt-12 text-left float-left">
+                    <h2 class="text-xl text-left float-left">Global Edulink offers accessible, high-quality online education for all, with flexible programs tailored to fit into daily life, empowering learners worldwide to achieve personal and professional goals.</h2>
                 </div>
-                <div class="flex justify-center space-x-4 mt-8">
+                <div class="flex justify-center space-x-4 p-10 mt-8">
                     <a href="#" class="bg-white rounded-full p-4"><i class="fab fa-facebook-f text-black"></i></a>
                     <a href="#" class="bg-white rounded-full p-4"><i class="fab fa-instagram text-black"></i></a>
                     <a href="#" class="bg-white rounded-full p-4"><i class="fab fa-twitter text-black"></i></a>

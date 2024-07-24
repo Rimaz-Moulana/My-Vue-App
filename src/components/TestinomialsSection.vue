@@ -1,5 +1,5 @@
 <template>
-    <section class="p-8 text-center">
+    <section class="p-10 text-center">
       <h2 class="text-3xl font-bold mb-8">Client Testimonials</h2>
       <!-- Add testimonials content here -->
     </section>
