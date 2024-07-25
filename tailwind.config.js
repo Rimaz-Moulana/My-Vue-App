@@ -17,6 +17,7 @@ module.exports = {
     extend: {
       colors:{
         bgRose: '#FBF6F1',
+        bgModule : '#EFF4FF',
 
       },
     },
