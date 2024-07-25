@@ -1,5 +1,5 @@
 <template>
-  <section class="p-48 bg-bgRose rounded-se-[20%]">
+  <section class="p-10 md:p-48 bg-bgRose rounded-se-[20%]">
     <h2 class="text-3xl font-bold text-center mb-8">Master Your Career Growth with Our Top-Rated, Expert-Led Courses</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div v-for="course in courses" :key="course.id" class="bg-white p-4 rounded-lg shadow-lg flex flex-col">
@@ -7,22 +7,23 @@
           <img :src="course.image" alt="Course Image" class="w-full h-full object-contain">
         </div>
         <h3 class="text-xl font-bold mb-2">{{ course.title }}</h3>
-        <div class="flex mb-2 justify-items-start ">
-          <div class="flex items-center bg-bgModule p-1 rounded-xl ">
+        <div class="flex mb-2 justify-items-start flex-wrap">
+          <div class="flex items-center bg-bgModule p-1 rounded-xl px-3 mr-2 mb-2 md:mb-0">
             <i class="fas fa-clock mr-2"></i>
             <a>Modules</a>
           </div>
-          <div class="flex items-center bg-bgModule p-1 rounded-md mr-2">
+          <div class="flex items-center bg-bgModule p-1 rounded-xl px-3">
             <i class="fas fa-user mr-2"></i>
             <a>Professional Certificate</a>
           </div>
         </div>
         <p class="text-gray-700 mb-2">{{ course.description }}</p>
-        <p class="text-black font-bold">From {{ course.price }}/month</p>
+        <a>From <a class="text-black text-2xl font-bold">{{ course.price }}</a><a>/month</a></a>
       </div>
     </div>
   </section>
 </template>
+
 
 
   
