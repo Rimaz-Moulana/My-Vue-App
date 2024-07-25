@@ -8,7 +8,7 @@
           </div>
           <h3 class="text-xl font-bold mb-2">{{ course.title }}</h3>
           <p class="text-gray-700 mb-2">{{ course.description }}</p>
-          <p class="text-green-500 font-bold">{{ course.price }}</p>
+          <p class="text-Black font-bold">{{ course.price }}</p>
         </div>
       </div>
     </section>
@@ -27,7 +27,7 @@ import course6 from '@/assets/course-6.png';
     data() {
       return {
         courses: [
-          { id: 1, image: course1, title: 'Course 1', description: 'Learn the basics of Course 1.', price: '$99' },
+          { id: 1, image: course1, title: 'PRINCE2® 7 Practitioner: Interactive & Gamified Learning', description: 'Learn the basics of Course 1.', price: '$99' },
           { id: 2, image: course2, title: 'Course 2', description: 'Intermediate skills in Course 2.', price: '$129' },
           { id: 3, image: course3, title: 'Course 3', description: 'Advanced techniques in Course 3.', price: '$149' },
           { id: 4, image: course4, title: 'Course 4', description: 'Master Course 4 concepts.', price: '$179' },
