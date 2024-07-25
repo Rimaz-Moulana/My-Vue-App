@@ -7,6 +7,7 @@
         </div>
         <div class="p-4">
           <img :src="img1" class="z-10 object-cover">
+          
         </div>
         <div class="p-4">
           <img :src="img2" class="z-10 object-cover">

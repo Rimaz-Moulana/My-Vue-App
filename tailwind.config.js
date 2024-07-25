@@ -16,11 +16,7 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        darkGreen: '#8EA174',
-        bgRose: '#f7efe7',
-        sidebarGreen : '#284625',
-        buttonGreen : '#3C6849',
-        filterGreen : '#DEE5C2',
+        bgRose: '#FBF6F1',
 
       },
     },
