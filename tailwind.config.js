@@ -18,7 +18,8 @@ module.exports = {
       colors:{
         bgRose: '#FBF6F1',
         bgModule : '#EFF4FF',
-
+        bgSlider : '#F6FFDB',
+        bgIcon : '#D7F0E5',
       },
     },
   },

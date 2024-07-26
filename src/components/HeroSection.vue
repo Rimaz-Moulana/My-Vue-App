@@ -1,5 +1,5 @@
 <template>
-    <section class="relative bg-bgRose  p-10 text-center lg:rounded-b-[45%] sm:rounded-b-3xl overflow-hidden">
+    <section class="relative bg-bgRose p-20 text-center lg:rounded-b-[45%] sm:rounded-b-3xl overflow-hidden">
       <div class="grid md:grid-cols-2 gap-4 lg:grid-cols-2 sm:grid-cols-1">
         <div class="p-4 mt-16 order-2 md:order-1 mb-24 md:mb-0 lg:bg-bgRose">
           <h1 class="text-5xl font-bold mb-4 text-left">
