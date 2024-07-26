@@ -19,7 +19,7 @@
                     <a href="#" class="bg-white rounded-full p-4"><i class="fab fa-linkedin-in text-black"></i></a>
                     <a href="#" class="bg-white rounded-full p-4"><i class="fab fa-youtube text-black"></i></a>
                 </div>
-                <div class="mt-8">
+                <div class="mt-6">
                     <button class="bg-green-500 text-white font-bold py-2 px-4 w-full rounded-[5px]">Verify Your Certificate</button>
                 </div>
             </div>
@@ -66,16 +66,32 @@
         </div>
 
        <div class="grid md:grid-cols-2 gap-20 lg:grid-cols-2 sm:grid-cols-1">
-        <div class="mt-12 bg-bgRose p-8 rounded-lg shadow-lg">
-            
-            <h3 class="text-2xl font-bold mb-4">Apply Now</h3>
-            <div class="flex flex-col md:flex-row md:items-center md:justify-center">
-                <input type="text" placeholder="Enter your details" class="border border-gray-300 p-2 rounded-md mb-4 md:mb-0 md:mr-4 flex-grow">
+        
+        <div class="mt-4 bg-bgRose px-8">
+            <div class="mt-20">
+                <p class="text-1xl text-left ">Choose your preferred language</p>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-center md:justify-center lg:w-[60%]">
+                <input type="text" placeholder="Enter your details" class="border lg:w-[20%] sm:w-[100%] border-gray-300 p-2 rounded-md mb-4 md:mb-0 md:mr-4 flex-grow">
                 <button class="bg-black text-white font-bold py-2 px-4 rounded-md">Apply</button>
             </div>
         </div> 
-        <div>
-            
+        <div class="grid md:grid-rows-2 gap-20 lg:grid-rows-2 sm:grid-cols-1">
+            <div class="justify-between flex lg:mr-40">
+                <img :src="require('@/assets/image 26.png')"  class="h-10 mr-4">
+                <img :src="require('@/assets/footer-logo-1.png')"  class="h-10 mr-4">
+                <img :src="require('@/assets/footer-logo-2.png')"  class="h-10 mr-4">
+                <img :src="require('@/assets/footer-logo-3.png')"  class="h-10 mr-4">
+                
+            </div>
+            <div class="justify-between flex lg:mr-40 sm:px-5">
+                <img :src="require('@/assets/image 59.png')" alt="Logo" class="h-10 mr-4">
+                <img :src="require('@/assets/image 61.png')" alt="Logo" class="h-10 mr-4">
+                <img :src="require('@/assets/image 63.png')" alt="Logo" class="h-10 mr-4">
+                <img :src="require('@/assets/image 74.png')" alt="Logo" class="h-10 mr-4">
+                <img :src="require('@/assets/image 73.png')" alt="Logo" class="h-10 mr-4">
+                <img :src="require('@/assets/image 60.png')" alt="Logo" class="h-10 mr-4">
+            </div>
         </div>
          <a >Copyright © 2015 - 2024 -Global Edulink All rights reserved</a>
     </div>

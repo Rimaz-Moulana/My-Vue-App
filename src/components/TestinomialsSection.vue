@@ -1,5 +1,5 @@
 <template>
-  <section class="relative py-16 bg-black overflow-hidden">
+  <section class="relative py-16 bg-black overflow-hidden rounded-t-[40%]">
     <div class="text-center mb-12 relative z-10">
       <h2 class="text-3xl text-white  font-bold mb-4">Find Your Perfect Fit:</h2>
       <h3 class="text-3xl text-white font-bold mb-2">Dive into Our Diverse Categories</h3>
