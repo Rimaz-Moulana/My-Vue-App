@@ -99,7 +99,7 @@
 </template>
 
 <script>
-import Logo from '@/assets/Logo.png';
+import Logo from '@/assets/logo.png';
 
 export default {
     name: 'FooterSection',

@@ -36,7 +36,7 @@
 
 <script>
 import Arrow from '@/assets/Arrow.png';
-import Logo from '@/assets/Logo.png';
+import Logo from '@/assets/logo.png';
 
 export default {
     name: 'HeaderSection',

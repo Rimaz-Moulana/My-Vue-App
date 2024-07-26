@@ -9,7 +9,7 @@
         <h3 class="text-xl font-bold mb-2 mt-2">{{ item.title }}</h3>
         <p class="text-gray-600 mb-4">{{ item.description }}</p>
         <div class="flex items-center mt-auto">
-          <img :src="require('@/assets/Logo.png')" alt="Logo" class="h-5 mr-4">
+          <img :src="require('@/assets/logo.png')" alt="logo" class="h-5 mr-4">
           <a class="text-black font-extrabold font-mono text-1xl">Global</a>
           <a class="text-gray-600 text-1xl font-mono">Edulink</a>
         </div>
