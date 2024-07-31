@@ -1,6 +1,8 @@
 <template>
   <section class="p-10 md:p-48 bg-bgRose sloped-section">
-    <h2 class="text-3xl font-bold text-center lg:-mt-16 lg:mb-20 sm:mb-40 ">Master Your Career Growth with Our Top-Rated,<br>Expert-Led Courses</h2>
+    <h2 class="text-3xl font-bold text-center lg:-mt-16 lg:mb-20 sm:mb-40">
+      Master Your Career Growth with Our Top-Rated,<br>Expert-Led Courses
+    </h2>
     <!-- Category Slider -->
     <div class="relative mb-8 lg:px-36 sm:px-8">
       <button @click="prevCategory" class="absolute top-1/2 transform -translate-y-1/2 p-2 bg-black rounded-full hover:bg-gray-300 focus:outline-none">
@@ -37,6 +39,14 @@
         <p class="text-gray-700 mb-2">{{ course.description }}</p>
         <a>From <a class="text-black text-2xl font-bold">{{ course.price }}</a><a>/month</a></a>
       </div>
+    </div>
+
+    <div class="flex justify-center items-center lg:mx-28 mt-10 ">
+      <button class="bg-black lg:w-[135px] sm:w-[80%] text-white rounded-md px-4 py-2 flex items-center hover:bg-gray-700 transition duration-300">
+        Show More
+        <i class="fas fa-arrow-right ml-2"></i>
+      </button>
+      <button class="bg-transparent lg:w-[100px] sm:w-[80%] border-[2px] rounded-md py-2 px-3 mx-4 hover:bg-yellow-200 transition duration-300">View all</button>
     </div>
   </section>
 </template>
@@ -113,15 +123,23 @@ export default {
   position: relative;
   clip-path: polygon(0 0, 100% 7%, 100% 97%, 0 100%);
 }
-@media (max-width: 639px) { /* sm: breakpoint */
+@media (max-width: 639px) { 
   .sloped-section {
     clip-path: polygon(0 0, 100% 1%, 100% 97%, 0 100%);
   }
 }
-@media (min-width: 1024px) { /* lg: breakpoint */
+@media (min-width: 1024px) {
   .sloped-section {
     clip-path: polygon(0 0, 100% 7%, 100% 97%, 0 100%);
   }
 }
+.hover\:bg-gray-700:hover {
+  background-color: #4a5568;
+}
+.transition {
+  transition: all 0.3s ease;
+}
+.duration-300 {
+  transition-duration: 0.3s;
+}
 </style>
-

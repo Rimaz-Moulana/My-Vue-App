@@ -65,36 +65,39 @@
             </div>
         </div>
 
-       <div class="grid md:grid-cols-2 gap-20 lg:grid-cols-2 sm:grid-cols-1">
-        
-        <div class="mt-4 bg-bgRose px-8">
-            <div class="mt-20">
-                <p class="text-1xl text-left ">Choose your preferred language</p>
-            </div>
-            <div class="flex flex-col md:flex-row md:items-center md:justify-center lg:w-[60%]">
-                <input type="text" placeholder="Enter your details" class="border lg:w-[20%] sm:w-[100%] border-gray-300 p-2 rounded-md mb-4 md:mb-0 md:mr-4 flex-grow">
-                <button class="bg-black text-white font-bold py-2 px-4 rounded-md">Apply</button>
-            </div>
-        </div> 
-        <div class="grid md:grid-rows-2 gap-20 lg:grid-rows-2 sm:grid-cols-1">
-            <div class="justify-between flex lg:mr-40">
-                <img :src="require('@/assets/image 26.png')"  class="h-10 mr-4">
-                <img :src="require('@/assets/footer-logo-1.png')"  class="h-10 mr-4">
-                <img :src="require('@/assets/footer-logo-2.png')"  class="h-10 mr-4">
-                <img :src="require('@/assets/footer-logo-3.png')"  class="h-10 mr-4">
+        <div class="grid md:grid-cols-2 gap-1 lg:grid-cols-2 sm:grid-cols-1">
+            <div class="mt-0 bg-bgRose px-8">
+                <div class="py-5">
+                    <p class="text-1xl text-left">Choose your preferred language</p>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-center md:justify-center lg:w-[60%]">
+                    <input type="text" placeholder="Enter your details" class="border lg:w-[20%] sm:w-[100%] border-gray-300 p-2 rounded-md mb-4 md:mb-0 md:mr-4 flex-grow">
+                    <button class="bg-black text-white font-bold py-2 px-4 rounded-md">Apply</button>
+                </div>
+                <div class="lg:mt-20 float-left">
+                    <a>Copyright © 2015 - 2024 - Global Edulink All rights reserved</a>
+                </div>
                 
             </div>
-            <div class="justify-between flex lg:mr-40 sm:px-5">
-                <img :src="require('@/assets/image 59.png')" alt="Logo" class="h-10 mr-4">
-                <img :src="require('@/assets/image 61.png')" alt="Logo" class="h-10 mr-4">
-                <img :src="require('@/assets/image 63.png')" alt="Logo" class="h-10 mr-4">
-                <img :src="require('@/assets/image 74.png')" alt="Logo" class="h-10 mr-4">
-                <img :src="require('@/assets/image 73.png')" alt="Logo" class="h-10 mr-4">
-                <img :src="require('@/assets/image 60.png')" alt="Logo" class="h-10 mr-4">
+            
+            <div class="grid md:grid-rows-2  lg:grid-rows-2 justify-center sm:grid-cols-1 lg:mt-5" >
+                <div class="justify-center items-center flex lg:mr-40 py-16 lg:px-5 px-20">
+                    <img :src="require('@/assets/image 26.png')" class="h-10 mr-10">
+                    <img :src="require('@/assets/footer-logo-1.png')" class="h-10 mr-10">
+                    <img :src="require('@/assets/footer-logo-2.png')" class="h-10 mr-10">
+                    <img :src="require('@/assets/footer-logo-3.png')" class="h-10 mr-10">
+                </div>
+                <div class="justify-center flex lg:mr-40 sm:px-5">
+                    <img :src="require('@/assets/image 59.png')" alt="Logo" class="h-10 mr-4">
+                    <img :src="require('@/assets/image 61.png')" alt="Logo" class="h-10 mr-4">
+                    <img :src="require('@/assets/image 63.png')" alt="Logo" class="h-10 mr-4">
+                    <img :src="require('@/assets/image 74.png')" alt="Logo" class="h-10 mr-4">
+                    <img :src="require('@/assets/image 73.png')" alt="Logo" class="h-10 mr-4">
+                    <img :src="require('@/assets/image 60.png')" alt="Logo" class="h-10 mr-4">
+                </div>
             </div>
+            
         </div>
-         <a >Copyright © 2015 - 2024 -Global Edulink All rights reserved</a>
-    </div>
     </section>
 </template>
 

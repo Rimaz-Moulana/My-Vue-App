@@ -1,10 +1,10 @@
 <template>
-  <section class="bg-bgRose py-10 p-36 text-center">
+  <section class="bg-bgRose md:p-48 py-10 lg:px-36 sm:px-10 text-center z-0">
     <h2 class="text-3xl font-bold lg:mb-24 mt-8">
       Our experts design tailored courses to solve workforce<br>challenges and drive business success.
     </h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
       <div v-for="course in visibleCourses" :key="course.id" class="bg-white p-4 rounded-lg shadow-lg flex flex-col">
         <div class="w-full aspect-w-16 aspect-h-9 mb-4 px-2">
           <img :src="course.image" alt="Course Image" class="w-full h-full object-contain">
@@ -26,10 +26,13 @@
         </div>
       </div>
     </div>
-
-    <button @click="toggleShowMore" class="mt-4 text-blue-500">
-      {{ showMore ? 'Show Less' : 'Show More' }}
-    </button>
+    <div @click="toggleShowMore" class="flex justify-center items-center lg:mx-40 mt-10">
+      <button class="bg-black text-white rounded-md px-4 py-2 flex items-center hover:bg-gray-700 transition duration-300">
+        {{ showMore ? 'Show Less' : 'Show More' }}
+        <i class="fas fa-arrow-right ml-2"></i>
+      </button>
+      <button @click="toggleShowMore" class="bg-transparent border-[2px] rounded-md py-2 px-3 mx-4 hover:bg-yellow-200 transition duration-300">View all</button>
+    </div>
   </section>
 </template>
 
