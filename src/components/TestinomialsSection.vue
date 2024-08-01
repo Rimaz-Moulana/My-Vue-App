@@ -9,7 +9,7 @@
       </p>
     </div>
     <div class="relative z-20">
-      <div class="grid  sm:grid-cols-1 lg:grid-cols-4 gap-10 mb-8 px-20">
+      <div class="grid sm:grid-cols-1 lg:grid-cols-4 gap-10 mb-8 px-20">
         <div
           v-for="(category, index) in visibleCategories"
           :key="category.name"
@@ -34,18 +34,18 @@
       <div class="flex justify-center mb-4">
         <button
           @click="prevCategory"
-          class="p-2 bg-white text-black rounded-[75%] hover:bg-gray-700 focus:outline-none"
+          class="p-2 bg-white text-black rounded-full hover:bg-gray-700 focus:outline-none"
         >
-          <i class="fas fa-chevron-left "></i>
+          <i class="fas fa-chevron-left"></i>
         </button>
         <div class="flex items-center mx-4">
           <div v-for="index in 2" :key="index" :class="['h-1', barClass(index)]" style="width: 140px;"></div>
         </div>
         <button
           @click="nextCategory"
-          class="p-2 bg-white text-black rounded-[75%] hover:bg-gray-700 focus:outline-none"
+          class="p-2 bg-white text-black rounded-full hover:bg-gray-700 focus:outline-none"
         >
-          <i class="fas fa-chevron-right "></i>
+          <i class="fas fa-chevron-right"></i>
         </button>
       </div>
     </div>
@@ -128,35 +128,47 @@ export default {
         },
       ],
       visibleStartIndex: 0,
-      visibleEndIndex: 3,
+      itemsPerPage: 4,
     };
   },
   computed: {
     visibleCategories() {
-      return this.categories.slice(this.visibleStartIndex, this.visibleEndIndex + 1);
+      return this.categories.slice(this.visibleStartIndex, this.visibleStartIndex + this.itemsPerPage);
     },
   },
   methods: {
     nextCategory() {
-      if (this.visibleEndIndex < this.categories.length - 1) {
-        this.visibleStartIndex++;
-        this.visibleEndIndex++;
+      if (this.visibleStartIndex + this.itemsPerPage < this.categories.length) {
+        this.visibleStartIndex += this.itemsPerPage;
       }
     },
     prevCategory() {
       if (this.visibleStartIndex > 0) {
-        this.visibleStartIndex--;
-        this.visibleEndIndex--;
+        this.visibleStartIndex -= this.itemsPerPage;
       }
     },
     getColorClass(index) {
       const colors = ['bg-purple-200', 'bg-yellow-200', 'bg-purple-300'];
-      return colors[index % 3];
+      return colors[index % colors.length];
     },
     barClass(index) {
-      const currentBarIndex = Math.floor(this.visibleStartIndex / Math.ceil(this.categories.length / 2));
+      const currentBarIndex = Math.floor(this.visibleStartIndex / this.itemsPerPage);
       return currentBarIndex === index - 1 ? 'bg-black' : 'bg-gray-300';
     },
+    handleResize() {
+      if (window.innerWidth <= 639) {
+        this.itemsPerPage = 1;
+      } else {
+        this.itemsPerPage = 4;
+      }
+    },
+  },
+  mounted() {
+    this.handleResize();
+    window.addEventListener('resize', this.handleResize);
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.handleResize);
   },
 };
 </script>
@@ -168,7 +180,6 @@ export default {
 
 .bg-white {
   background-color: #fff;
-
 }
 
 .text-black {
@@ -184,11 +195,11 @@ export default {
 }
 
 .bg-yellow-200 {
-  background-color: #FFF3CF  ;
+  background-color: #FFF3CF;
 }
 
 .bg-yellow-300 {
-  background-color: #FFDA6E  ;
+  background-color: #FFDA6E;
 }
 
 .bg-purple-300 {
@@ -196,7 +207,7 @@ export default {
 }
 
 img {
-  width: 4rem; /* Adjust image size as needed */
+  width: 4rem;
   height: 4rem;
   object-fit: cover;
   border-radius: 50%;
@@ -213,13 +224,13 @@ img {
   background-color: #000;
 }
 
-@media (max-width: 639px) { /* sm: breakpoint */
+@media (max-width: 639px) {
   .sloped-section {
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
   }
 }
 
-@media (min-width: 1024px) { /* lg: breakpoint */
+@media (min-width: 1024px) {
   .sloped-section {
     clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
   }

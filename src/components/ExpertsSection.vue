@@ -1,10 +1,10 @@
 <template>
-  <section class="bg-bgRose md:p-48 py-10 lg:px-36 sm:px-10 text-center z-0">
-    <h2 class="text-3xl font-bold lg:mb-24 mt-8">
+  <section class="bg-bgRose px-10 lg:p-20 lg:px-36 sm:px-10 text-center py-1 z-0">
+    <h2 class="text-3xl font-bold lg:mb-24 mt-0">
       Our experts design tailored courses to solve workforce<br>challenges and drive business success.
     </h2>
 
-    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
       <div v-for="course in visibleCourses" :key="course.id" class="bg-white p-4 rounded-lg shadow-lg flex flex-col">
         <div class="w-full aspect-w-16 aspect-h-9 mb-4 px-2">
           <img :src="course.image" alt="Course Image" class="w-full h-full object-contain">
@@ -26,13 +26,17 @@
         </div>
       </div>
     </div>
-    <div @click="toggleShowMore" class="flex justify-center items-center lg:mx-40 mt-10">
-      <button class="bg-black text-white rounded-md px-4 py-2 flex items-center hover:bg-gray-700 transition duration-300">
+    <div class="relative flex flex-col sm:flex-row sm:w-[70%] justify-center lg:justify-center items-center lg:mx-40 mt-20 mb-36 lg:mb-[-20px] z-10 space-y-4 sm:space-y-0 lg:space-x-4">
+      <button @click="toggleShowMore" class="w-full sm:w-auto bg-black text-white rounded-md px-4 py-2 flex items-center justify-center hover:bg-gray-700 transition duration-300 z-20">
         {{ showMore ? 'Show Less' : 'Show More' }}
         <i class="fas fa-arrow-right ml-2"></i>
       </button>
-      <button @click="toggleShowMore" class="bg-transparent border-[2px] rounded-md py-2 px-3 mx-4 hover:bg-yellow-200 transition duration-300">View all</button>
+      <button @click="toggleShowMore" class="w-full sm:w-auto bg-transparent border-[2px] rounded-md py-2 px-3 flex items-center justify-center hover:bg-yellow-200 transition duration-300 z-20">
+        View all
+      </button>
+      <div class="absolute inset-0 bg-bgRose opacity-90 z-0"></div>
     </div>
+
   </section>
 </template>
 

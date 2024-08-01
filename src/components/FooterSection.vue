@@ -12,15 +12,15 @@
                 <div class="mt-12 text-left float-left">
                     <h2 class="text-xl text-left float-left">Global Edulink offers accessible, high-quality online education for all, with flexible programs tailored to fit into daily life, empowering learners worldwide to achieve personal and professional goals.</h2>
                 </div>
-                <div class="flex justify-center space-x-4 p-10 mt-8">
+                <div class="flex justify-center space-x-4 p-8 mt-8">
                     <a href="#" class="bg-white rounded-full p-4"><i class="fab fa-facebook-f text-black"></i></a>
                     <a href="#" class="bg-white rounded-full p-4"><i class="fab fa-instagram text-black"></i></a>
                     <a href="#" class="bg-white rounded-full p-4"><i class="fab fa-twitter text-black"></i></a>
                     <a href="#" class="bg-white rounded-full p-4"><i class="fab fa-linkedin-in text-black"></i></a>
                     <a href="#" class="bg-white rounded-full p-4"><i class="fab fa-youtube text-black"></i></a>
                 </div>
-                <div class="mt-6">
-                    <button class="bg-green-500 text-white font-bold py-2 px-4 w-full rounded-[5px]">Verify Your Certificate</button>
+                <div class="mt-6 ">
+                    <button class="bg-green-500 text-white font-bold py-2 px-2 w-full rounded-[5px]">Verify Your Certificate</button>
                 </div>
             </div>
             <div class="bg-bgRose p-4 mt-12">
@@ -87,14 +87,21 @@
                     <img :src="require('@/assets/footer-logo-2.png')" class="h-10 mr-10">
                     <img :src="require('@/assets/footer-logo-3.png')" class="h-10 mr-10">
                 </div>
-                <div class="justify-center flex lg:mr-40 sm:px-5">
+                <div class="flex flex-col lg:flex-row lg:justify-center lg:mr-40 sm:px-5">
+                <div class="flex justify-center lg:justify-between lg:mr-28 mb-4 lg:mb-0">
                     <img :src="require('@/assets/image 59.png')" alt="Logo" class="h-10 mr-4">
                     <img :src="require('@/assets/image 61.png')" alt="Logo" class="h-10 mr-4">
                     <img :src="require('@/assets/image 63.png')" alt="Logo" class="h-10 mr-4">
+                </div>
+                <div class="flex justify-center lg:justify-between">
                     <img :src="require('@/assets/image 74.png')" alt="Logo" class="h-10 mr-4">
                     <img :src="require('@/assets/image 73.png')" alt="Logo" class="h-10 mr-4">
                     <img :src="require('@/assets/image 60.png')" alt="Logo" class="h-10 mr-4">
                 </div>
+            </div>
+
+
+
             </div>
             
         </div>
@@ -114,6 +121,3 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Add any additional styling if needed */
-</style>

@@ -136,6 +136,4 @@ export default {
 };
 </script>
 
-<style scoped>
-/* No additional styles needed for responsiveness with Tailwind */
-</style>
+

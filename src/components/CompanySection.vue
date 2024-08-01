@@ -38,7 +38,4 @@ import img3 from '@/assets/image-3.png';
   };
   </script>
   
-  <style scoped>
-  /* Add any additional styling if needed */
-  </style>
   

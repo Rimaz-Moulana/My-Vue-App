@@ -1,5 +1,5 @@
 <template>
-  <section class="p-10 md:p-48 bg-bgRose sloped-section">
+  <section class="p-10 md:p-48  bg-bgRose sloped-section">
     <h2 class="text-3xl font-bold text-center lg:-mt-16 lg:mb-20 sm:mb-40">
       Master Your Career Growth with Our Top-Rated,<br>Expert-Led Courses
     </h2>
@@ -41,13 +41,17 @@
       </div>
     </div>
 
-    <div class="flex justify-center items-center lg:mx-28 mt-10 ">
-      <button class="bg-black lg:w-[135px] sm:w-[80%] text-white rounded-md px-4 py-2 flex items-center hover:bg-gray-700 transition duration-300">
-        Show More
+    <div class="relative flex flex-col sm:flex-row sm:w-[70%] justify-center lg:justify-center items-center lg:mx-40 mt-20 mb-36 lg:mb-[-100px] z-10 space-y-4 sm:space-y-0 lg:space-x-4">
+      <button @click="toggleShowMore" class="w-full sm:w-auto bg-black text-white rounded-md px-4 py-2 flex items-center justify-center hover:bg-gray-700 transition duration-300 z-20">
+        {{ showMore ? 'Show Less' : 'Show More' }}
         <i class="fas fa-arrow-right ml-2"></i>
       </button>
-      <button class="bg-transparent lg:w-[100px] sm:w-[80%] border-[2px] rounded-md py-2 px-3 mx-4 hover:bg-yellow-200 transition duration-300">View all</button>
+      <button @click="toggleShowMore" class="w-full sm:w-auto bg-transparent border-[2px] rounded-md py-2 px-3 flex items-center justify-center hover:bg-yellow-200 transition duration-300 z-20">
+        View all
+      </button>
+      <div class="absolute inset-0 bg-bgRose opacity-90 z-0"></div>
     </div>
+
   </section>
 </template>
 
